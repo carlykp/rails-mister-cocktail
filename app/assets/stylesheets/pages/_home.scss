@@ -1,1 +1,38 @@
 // Specific CSS for your home-page
+.header_img {
+
+}
+.banner {
+  background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%);
+  background-image: url("https://images.pexels.com/photos/1702/bow-tie-businessman-fashion-man.jpg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+  height: 100vh;
+  width: 100vw;
+}
+
+.banner-content {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 250px;
+  color: $maroon;
+  h1 {
+    font-size: 65px;
+  }
+  h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .btn {
+    background-color: $maroon;
+    border-color: $maroon;
+    color: rgb(228, 227, 232);
+      &:hover {
+        color: $maroon;
+        border-color: $maroon;
+        background-color: rgb(214, 218, 221);
+      }
+  }
+}
+
+.container h1 {
+  font-family: 'Poppins', sans-serif;
+  color: $maroon;
+}
