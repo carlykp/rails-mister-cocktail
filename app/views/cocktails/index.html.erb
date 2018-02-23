@@ -2,13 +2,16 @@
 
 <div class="container">
   <h1>List of Cocktails</h1>
-
-  <% @cocktails.each do |cocktail| %>
-
-      <div><%= link_to cocktail.name, cocktail %></div>
-  <% end %>
+  <div class="row">
+    <div class="card">
+      <div class="col-sx-12 col-sm-6 col-med-4">
+        <% @cocktails.each do |cocktail| %>
+          <img src=<%= cocktail.photo  %> alt="Avatar" class = "card_img">
+          <div><%= link_to cocktail.name, cocktail %></div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <%= link_to 'New Cocktail', new_cocktail_path %>
 </div>
-
-<%= link_to 'New Cocktail', new_cocktail_path %>
-
 
